@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>project work</title>
+</head>
+<body>
+    <section>
+        <form name="calculator" class="home-con">
+          <div class="linker">
+            <a href="index.html">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+          </div>
+      
+            <div class="link">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+            <div class="result">
+                <input type="text" class="result2" name="answer" readonly />
+            </div>
+            <div class="img-con">
+              <img src="images/mobile-removebg-preview.png" alt=""> 
+            </div>
+
+            <div class="number-con">
+                <input type="button" class="btn-up" value="C" onclick="calculator.answer.value = ''" />
+                <button class="btn-up">+/-</button>
+                <input type="button" class="btn-up" value="%" onclick="calculator.answer.value += '%'" />
+                <input type="button" value="&#247;" onclick="calculator.answer.value += '/'" class="math" />
+            </div>
+            <div class="number-con2">
+                <input type="button" value="7" onclick="calculator.answer.value += '7'" class="btn-up6"/>
+                <input type="button" value="8" onclick="calculator.answer.value += '8'" class="btn-up6"/>
+                <input type="button" value="9" onclick="calculator.answer.value += '9'" class="btn-up6"/>
+                <input type="button" value="&times;" onclick="calculator.answer.value += '*'" class="math" />
+            </div>
+            <div class="number-con2">
+                <input type="button" value="4" onclick="calculator.answer.value += '4'" class="btn-up6"/>
+                <input type="button" value="5" onclick="calculator.answer.value += '5'" class="btn-up6"/>
+                <input type="button" value="6" onclick="calculator.answer.value += '6'" class="btn-up6"/>
+                <input type="button" value="&minus;" onclick="calculator.answer.value += '-'" class="math" />
+            </div>
+            <div class="number-con2">
+                <input type="button" value="1" onclick="calculator.answer.value += '1'" class="btn-up6"/>
+                <input type="button" value="2" onclick="calculator.answer.value += '2'" class="btn-up6"/>
+                <input type="button" value="3" onclick="calculator.answer.value += '3'" class="btn-up6"/>
+                <input type="button" value="&plus;" onclick="calculator.answer.value += '+'" class="math" />
+            </div>
+            <div class="number-con2">
+                <input type="button" value="0" onclick="calculator.answer.value += '0'" class="btn-combine" />
+                <input type="button" value="." onclick="calculator.answer.value += '.'" class="btn-up6" />
+                <input class="math" type="button" value="=" onclick="calculator.answer.value = eval(calculator.answer.value)"/>
+            </div>
+              <div class="text">
+                <p>calculus</p>
+              </div>
+        </form>
+    </section>
+</body>
+</html>
